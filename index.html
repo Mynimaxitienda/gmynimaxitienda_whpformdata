@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convert Datos Whastsapp Form</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <form>
+
+      <div class="image-picker">
+        <label class="image-choice">
+          <div id="imagePreview">
+            <img src="/encab.png">
+          </div>
+        </label>
+      </div>
+
+      <div class="prompt-box">
+        <label>
+          <input id="textwhpform" name="prompt" placeholder="Pegar Datos de Contacto Whastsapp Form"
+            value="">
+        </label>
+      </div>
+
+      <div class="prompt-box">
+        <label>
+          <input id="resultado" name="prompt" placeholder="Pegar Datos de Contacto Whastsapp Form"
+            value="">
+        </label>
+      </div>
+
+      <div class="prompt-box">
+        <button id="ejecutarFuncion" type="submit">Go</button>
+        <button id="cmdgrabaregcontacti">Grabar</button>
+      </div>
+
+    </form>
+
+    <div class="prompt-box">
+      <p class="output">(Resultado Registro Whp Form...)</p>
+    </div>
+    <div class="prompt-box">
+      <p id="idjsondata" class="output"></p>
+    </div>
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/whpformconvert.js"></script>
+  <!-- 
+  <script type="module" src="/index.js"></script>
+  -->
+
+</body>
+
+</html>
