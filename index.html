@@ -2,60 +2,86 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Convert Datos Whastsapp Form</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Convert Datos Whastsapp Form</title>
+      <!-- Favicon-->
+      <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="../public/css/styles.css" rel="stylesheet" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-  <main>
-    <form>
 
-      <div class="image-picker">
-        <label class="image-choice">
-          <div id="imagePreview">
-            <img src="/encab.png">
-          </div>
-        </label>
-      </div>
+      <main>
 
-      <div class="prompt-box">
-        <label>
-          <input id="textwhpform" name="prompt" placeholder="Pegar Datos de Contacto Whastsapp Form"
-            value="">
-        </label>
-      </div>
+            <!-- Navigation  -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 d-flex justify-content-between">
 
-      <div class="prompt-box">
-        <label>
-          <input id="resultado" name="prompt" placeholder="Pegar Datos de Contacto Whastsapp Form"
-            value="">
-        </label>
-      </div>
+                  <!-- Colap sidebar menuhambur  -->
+                  <a class="links" href="#">
 
-      <div class="prompt-box">
-        <button id="cmdlimpiar">Limpiar</button>
-        <button id="ejecutarFuncion" type="submit">Go</button>
-        <button id="cmdgrabaregcontacti">Grabar</button>
-      </div>
+                        <img id="idimglogo" src="./logo.png" alt="Logo de tu sitio" class="paddleft_10 spancolor_blue"
+                              style="width:100px" />
 
-    </form>
+                        <span class="visible spancolor_blue spansize_20 ">
+                        </span>
 
-    <div class="prompt-box">
-      <p id="idresout" class="output">(Resultado Registro Whp Form...)</p>
-    </div>
-    <div class="prompt-box">
-      <p id="idjsondata" class="output"></p>
-    </div>
+                  </a>
 
-  </main>
+                  <div class="navbar-nav ms-auto d-flex justify-content-between">
+                        <!-- inactivo visible -->
+                        <img id="login" src="../public/img/sliderencab/usuarioinac.png" alt="login"
+                              style="width: 100px; padding-left: 20px; padding-right: 20px;" />
 
-  <script type="module" src="/main.js"></script>
-  <script type="module" src="/whpformconvert.js"></script>
-  <!-- 
-  <script type="module" src="/index.js"></script>
-  -->
+                        <!-- activo  ocultar  -->
+                        <img id="loginactivo" src="../public/img/sliderencab/usuarios.png" alt="login"
+                              style="width: 100px; padding-left: 20px; padding-right: 20px; display: none;" />
+                  </div>
+
+            </nav>
+
+
+
+            <form>
+                  <div class="prompt-box" style="margin-top: 120px;">
+                        <label>
+                              <input id="textwhpform" name="prompt" placeholder="PegarWhastsapp Form" value="">
+                        </label>
+                  </div>
+
+                  <div class="prompt-box">
+                        <label>
+                              <input id="resultado" name="prompt" placeholder="Pegar Datos con Whastsapp Form" value="">
+                        </label>
+                  </div>
+
+                  <div class="prompt-box">
+                        <button id="cmdlimpiar">Limpiar</button>
+                        <button id="ejecutarFuncion" type="submit">Go</button>
+                        <button id="cmdgrabaregcontacti">Grabar</button>
+                  </div>
+
+            </form>
+
+            <div class="prompt-box">
+                  <p id="idresout" class="output">(Resultado Registro Whp Form...)</p>
+            </div>
+            <div class="prompt-box">
+                  <p id="idjsondata" class="output"></p>
+            </div>
+
+      </main>
+
+
+
+
+      <script type="module" src="/main.js"></script>
+      <script type="module" src="/whpformconvert.js"></script>
+      <script type="module" src="/index.js"></script>
+
 
 </body>
 
